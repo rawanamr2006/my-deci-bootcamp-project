@@ -1,0 +1,387 @@
+.signika {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  color: black;
+  /* background-color: #432C7A!important; */
+  /* background-color: #ADA2FF!important; */
+  font-family: Signika, sans-serif;
+}
+
+main{
+  scroll-snap-type: y mandatory;
+}
+
+.logo {
+  max-width: 170px;
+  margin: auto 15px auto 22px;
+}
+
+.profile-pic{
+   display: inline-block;
+   vertical-align: middle;
+   width: 50px;
+   height: 50px;
+   overflow: hidden;
+   border-radius: 50%;
+}
+
+.profile-pic img{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+.profile-menu .dropdown-menu {
+  right: 0;
+  left: unset;
+}
+.profile-menu .fa-fw {
+  margin-right: 10px;
+}
+
+.toggle-change::after {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+
+.navbar {
+  color: black;
+  /* background-color: #432C7A!important; */
+  background-color: white!important;
+
+
+}
+
+.navbar-brand {
+  color: black!important;
+  font-size: 22px;
+  font-weight: bold;
+}
+.topnav a.active {
+  border-bottom: 3px solid #808D7C;
+  color: #808D7C!important;
+}
+.nav-link{
+  color: black!important;
+}
+
+.navbar-nav{
+  margin: auto;
+}
+
+.navbar-item {
+  margin: 0 15px;
+  font-size: 17px;
+}
+
+.img {
+  height: 370px;
+  object-fit: contain;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.img-fluid{
+  max-height: 450px;
+}
+
+.header-txt {
+  max-width: 440px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.middle-text {
+  font-size: 50px;
+  max-width: 750px;
+}
+
+.small-txt {
+  font-size: 15px;
+
+}
+
+.separator {
+  height: 60px;
+}
+
+.footer {
+  height: 225px;
+  width: 100%;
+  background-color: #4A249D!important;
+  text-align: center;
+}
+
+.footer a{
+  color: white;
+}
+
+.footer .social-button {
+  width: 25px;
+  margin: 10px;
+}
+
+.footer .social-button:hover{
+  opacity: 65%;
+}
+
+.footer .social-button:active{
+  opacity: 100%:
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+
+}
+
+.footer-img{
+  width:90px;
+}
+
+
+
+/* SERVICES AND NEWS PAGE SPECIFIC CSS */
+.card {
+  color: black;
+  min-width: 300px;
+  min-height: 290px;
+
+}
+
+.small-card{
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.team{
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: auto;
+
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.small-card-title{
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.small-img{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+
+.card-button {
+  bottom: 0;
+}
+
+.card-img-top{
+  height: 200px;
+}
+
+/* CONTACT US PAGE SPECIFIC CSS */
+
+.form-container {
+  /* background-color: #6c757d; */
+  color:white;
+  background-color: #4A249D;
+  min-width: 400px;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 20px auto;
+  margin-bottom: 50px;
+  box-shadow: 5px;
+
+}
+
+.btn-submit {
+  max-width: 350px;
+  min-width: 250px;
+}
+
+/* Small Mobile Screen Media Query */
+@media only screen and (max-width: 500px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    display: block;
+    background-color: #6c757d;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 20px auto;
+    margin-bottom: 50px;
+  }
+  .form-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control {
+    width: 200px;
+  }
+
+  .footer {
+    align-self: flex-end;
+  }
+
+  .footer-img{
+    width:80px;
+  }
+
+  .btn-submit{
+    width:200px;
+  }
+}
+
+
+
+
+
+
+
+/* SOME STYLES */
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.main-content {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nutrients .nutrient {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.new-activity {
+    margin-top: 20px;
+}
+
+
+
+/* Scroll Animations */
+
+.smooth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+
+  scroll-snap-type: y mandatory;
+  // scroll-padding: 5vh 0;
+}
+
+.scrolls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.25em;
+  z-index: 2;
+}
+
+
+
+
+/* Trackers Page CSS Styles */
+
+.body-overview{
+  background-color: #4A249D!important;
+  color: #fff;
+  text-align: center;
+}
+
+.body-overview .card-title{
+  font-size: 28px;
+}
+
+.card .new-activity{
+  background-size: cover;
+}
+
+.card-p{
+  width: 40%;
+  height: 140px;
+  margin-top: 20px;
+}
+
+.arrow-button{
+  bottom: 0;
+  margin: auto;
+
+}
+
+.btn{
+  font-family: Arial;
+  font-weight: 500;
+}
+
+.btn {
+  transition: all 0.5s;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  padding-right: 25px;
+}
+
+/* Element Animations */
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
